@@ -7,36 +7,44 @@
         "Mongo DB"
     ],
     "repository": "https://github.com/JohnWick000101/JohnWickTranslator_V2",
-    "success_url": "https://t.me/John_Wick_0001",
     "env": {
         "API_ID": {
             "description": "Your APP ID From my.telegram.org ",
-            "value": ""
+            "type": "string",
+            "required": true
         },
         "API_HASH": {
             "description": "Your API Hash From my.telegram.org ",
-            "value": ""
+            "type": "string",
+            "required": true
         },
         "TOKEN": {
             "description": "Your Bot Token From @BotFather",
-            "value": ""
+            "type": "string",
+            "required": true
         },
         "ADMIN": {
-            "description": "Add Your User ID"
+            "description": "Add Your User ID",
+            "type": "string",
+            "required": false
         },
         "DB_URL": {
             "description": "Your Mongo DB URL Obtained From mongodb.com Watch This Video https://youtu.be/HhHzCfrqsoE",
-            "value": ""
+            "type": "string",
+            "required": true
         },
         "DB_NAME": {
             "description": "Your Mongo DB Database Name ",
-            "value": "my",
+            "type": "string",
+            "default": "my",
             "required": false
         }
     },
-    "buildpacks": [
-        {
-            "url": "heroku/python"
-        }
-    ]
+    "build": {
+        "env": {
+            "BUILD_DIR": "."
+        },
+        "command": "python main.py",
+        "use": "@vercel/python"
+    }
 }
