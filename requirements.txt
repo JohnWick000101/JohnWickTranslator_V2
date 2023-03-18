@@ -2,5 +2,5 @@ TgCrypto
 pyrogram==1.4.16
 pymongo
 dnspython
-googletrans==4.0.0rc1
+googletrans
 gTTS
