@@ -1,0 +1,42 @@
+{
+    "name": "John Wick Translater TG v2.1",
+    "description": "John Wick Translater - Translate All Languages In Telegram Group Chats!",
+    "logo": "https://i.ibb.co/WDfcxM7/C9-CEO-Discord-Logo-Picture-With-the-Title-Cloud9-colorful-abst-435d79e4-3db5-40ab-bfd8-96c08bbdb463.png",
+    "keywords": [
+        "John Wick Translater",
+        "Mongo DB"
+    ],
+    "repository": "https://github.com/JohnWick000101/JohnWickTranslator_V2",
+    "success_url": "https://t.me/John_Wick_0001",
+    "env": {
+        "API_ID": {
+            "description": "Your APP ID From my.telegram.org ",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash From my.telegram.org ",
+            "value": ""
+        },
+        "TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": ""
+        },
+        "ADMIN": {
+            "description": "Add Your User ID"
+        },
+        "DB_URL": {
+            "description": "Your Mongo DB URL Obtained From mongodb.com Watch This Video https://youtu.be/HhHzCfrqsoE",
+            "value": ""
+        },
+        "DB_NAME": {
+            "description": "Your Mongo DB Database Name ",
+            "value": "my",
+            "required": false
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
