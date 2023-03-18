@@ -44,7 +44,7 @@
         "env": {
             "BUILD_DIR": "."
         },
-        "command": "python main.py",
+        "command": "python bot.py",
         "use": "@vercel/python"
     }
 }
